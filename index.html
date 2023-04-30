@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Guide</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <main>
+
+        <!-- Navigation -->
+        <div class="hero-image fixed w-full ">
+            <div class="hero-content">
+                <!-- Menu -->
+                <div class="menu flex justify-between items-center px-4">
+                    <!-- Mobile Menu -->
+                    <div class="mobile-menu md:hidden py-4">
+                        <div id="mySidenav" class="sidenav h-full w-0 fixed top-0 left-0">
+                            <div class="flex items-center justify-between mb-8">
+                                <div class="social-media-icons flex items-center">
+                                    <a href="https://www.linkedin.com/in/anthony-bekoe-bankah-080448240" class="px-4 mx-2">
+                                        <img src="./icons/linkedin.png" alt="linkedin" title="LinkedIn" class="w-6 h-6">
+                                    </a>
+                                    <a href="https://github.com/bankah-junior" class="px-4 mx-2">
+                                        <img src="./icons/github.png" alt="github" title="GitHub" class="w-6 h-6">
+                                    </a>
+                                    <a href="https://www.instagram.com/@iam.bankah" class="px-4 mx-2">
+                                        <img src="./icons/instagram-original.png" alt="instagram" title="Instagram" class="w-6 h-6">
+                                    </a>
+                                    <a href="https://twitter.com/iam_bankah?t=UFouGnCo6AL1bxU_MMVRg&s=09" class="px-4 mx-2">
+                                        <img src="./icons/twitter-filled.png" alt="twitter" title="Twitter" class="w-6 h-6">
+                                    </a>
+                                    <a href="https://www.youtube.com/@welearn2" class="px-4 mx-2">
+                                        <img src="./icons/youtube.png" alt="youtube" title="YouTube" class="w-6 h-6">
+                                    </a>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span class="closebtn text-4xl cursor-pointer mx-2 px-4 font-bold text-red-500" id="closeMenu">&times;</span>
+                                </div>
+                            </div>
+                            <div class="side-nav-list text-white flex flex-col">
+                                <a href="#home" class="mx-2 px-4 my-4" id="homeMobile">Home</a>
+                                <a href="#blog" class="mx-2 px-4 my-4" id="blogMobile">Blog</a>
+                                <a href="#pptGen" class="mx-2 px-4 my-4" id="specialMobile">Special</a>
+                                <a href="#contact" class="mx-2 px-4 my-4" id="contactMobile">Contact</a>
+                            </div>
+                        </div>
+                        <span class="text-2xl font-semibold text-white cursor-pointer" id="openMenu">&#9776;</span>
+                    </div>
+                    <!-- End of Mobile Menu -->
+                    <a href="#">
+                        <h1 class="text-3xl font-bold text-white">The Guide</h1>
+                    </a>
+                    <!-- Large Menu -->
+                    <div class="large-menu hidden md:block">
+                        <div class="lists text-white flex">
+                            <a href="#home" class="main-link font-semibold py-2 mx-2 px-4 my-4">Home</a>
+                            <a href="#blog" class="main-link font-semibold py-2 mx-2 px-4 my-4">Blog</a>
+                            <a href="#pptGen" class="main-link font-semibold py-2 mx-2 px-4 my-4">Special</a>
+                            <a href="#contact" class="main-link font-semibold py-2 mx-2 px-4 my-4">Contact</a>
+                            <div class="dropdown">
+                                <button class="dropbtn font-semibold py-2 mx-2 px-4 my-4">Social Handles</button>
+                                <div class="dropdown-content">
+                                    <a href="https://www.linkedin.com/in/anthony-bekoe-bankah-080448240" class="px-4 mx-2 flex justify-between">
+                                        <img src="./icons/linkedin.png" alt="linkedin" title="LinkedIn" class="w-6 h-6">
+                                        <span class="text-xl font-semibold">LinkedIn</span>
+                                    </a>
+                                    <a href="https://github.com/bankah-junior" class="px-4 mx-2 flex justify-between">
+                                        <img src="./icons/github.png" alt="github" title="GitHub" class="w-6 h-6">
+                                        <span class="text-xl font-semibold">GitHub</span>
+                                    </a>
+                                    <a href="https://www.instagram.com/@iam.bankah" class="px-4 mx-2 flex justify-between">
+                                        <img src="./icons/instagram-original.png" alt="instagram" title="Instagram" class="w-6 h-6 mr-4">
+                                        <span class="text-xl font-semibold">Instagram</span>
+                                    </a>
+                                    <a href="https://twitter.com/iam_bankah?t=UFouGnCo6AL1bxU_MMVRg&s=09" class="px-4 mx-2 flex justify-between">
+                                        <img src="./icons/twitter-filled.png" alt="twitter" title="Twitter" class="w-6 h-6">
+                                        <span class="text-xl  font-semibold">Twitter</span>
+                                    </a>
+                                    <a href="https://www.youtube.com/@welearn2" class="px-4 mx-2 flex justify-between">
+                                        <img src="./icons/youtube.png" alt="youtube" title="YouTube" class="w-6 h-6">
+                                        <span class="text-xl font-semibold">YouTube</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Large Menu -->
+                </div>
+                <!-- End of Menu -->
+            </div>
+        </div>
+        <!-- End of Navigation -->
+
+        <!-- Home -->
+        <div class="home" id="home">
+            <img src="./img/businessman.jpg" alt="businessman" class="w-full">
+            <div class="mt-4 px-4">
+                <h1 class="text-3xl font-bold text-center mb-2">Our Pleasure</h1>
+                <p class="welcome-text md:text-xl md:text-center">
+                    Welcome to <b><i>THE GUIDE</i></b>. We are delight having you visit our 
+                    plateform. Our sole aim is to provide guidance. Keep in mind that what you 
+                    are going through is bigger and smaller than someone's <span id="blog"></span> own and someone also wishes to be in 
+                    your shoe. Feel free to share your problem and we are always here to help you out. Sharing your 
+                    problem might save someone somewhere. We are happy to have you here. 
+                </p>
+            </div>
+        </div>
+        <!-- End of Home -->
+
+        <!-- Blog -->
+        <div class="blog mt-8 px-4">
+            <div class="md:flex md:items-center">
+                <div class="tm md:w-100-50">
+                    <img src="./img/time.gif" alt="time" class="w-full">
+                    <div class="w-full md:flex md:flex-col md:justify-center md:items-center">
+                        <div class="md:w-100-40">
+                            <h1 class="text-3xl font-bold">TIME MANAGEMENT</h1>
+                            <p>
+                                It is the process of planning and organizing how to spend your time 
+                                in order to achieve specific goals or objectives. Effective time 
+                                management involves setting priorities, establishing goals, and creating 
+                                a plan to achieve those goals in the most effficient way possible. By 
+                                managing your time effectively, you can improve your productivity, reduce 
+                                stress, and achiev ea better work-life balance. There are many different 
+                                time management techniques that you can use, such as creating a personal 
+                                timetable, setting deadlines, breaking task down into smaller, more manageable 
+                                chunks, and using tools like calendars and to-do lists.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ptt md:w-100-50">
+                    <div class="relative hidden md:block">
+                        <img src="./img/calendar.svg" alt="calendar" class="w-full mt-8 relative">
+                        <div class="absolute w-full h-full top-0" style="background-color: rgba(240, 240, 226, .8);"></div>
+                        <div class="absolute top-0 p-4 flex flex-col justify-center items-center w-full h-full">
+                            <h1 class="text-3xl font-bold">PERSONAL TIMETABLE</h1>
+                            <p class="font-semibold">
+                                A personal timetable is a schedule that outlines a person's daily or 
+                                weekly activities. Personal timetables can be used to manage time 
+                                effectively, stay organized and achieve specific goals. They can 
+                                include tasks such as work, school, exercise, hobbies, and household 
+                                chores, and can be customized to meet an individual's needs and preferences.
+                                personal timetable can be created using variety of methods, such as paper-based 
+                                planners, digital calendars, or spreadsheet software.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:hidden p-4 flex flex-col justify-center items-center">
+                        <h1 class="text-3xl font-bold">PERSONAL TIMETABLE</h1>
+                        <p>
+                            A personal timetable is a schedule that outlines a person's daily or 
+                            weekly activities. Personal timetables can be used to manage time 
+                            effectively, stay organized and achieve specific goals. They can 
+                            include tasks such as work, school, exercise, hobbies, and household 
+                            chores, and can be customized to meet an individual's needs and preferences.
+                            personal timetable can be created using variety of methods, such as paper-based 
+                            planners, digital calendars, or spreadsheet software.
+                        </p>                        
+                    </div>
+                </div>
+            </div>
+            <div class="md:flex md:items-center mt-8">
+                <div class="need-ppt md:w-100-50">
+                    <h1 class="text-3xl font-bold">THE NEED FOR PERSONAL TIMETABLE</h1>
+                    <p>
+                        There are several benfits to creating and using a personal timetable:
+                    </p>
+                    <ol class="md:px-4 my-4">
+                        <li style="text-indent: 2rem;">
+                            ○ <span class="font-semibold">Improved time management</span>: A personal 
+                            timetable can help you plan out your day or week in advance, which can 
+                            help you make better use of your time. By scheduling specific blocks of 
+                            time for different activities, you can be more productive and avoid wasting 
+                            time on unnecessary tasks.
+                        </li>
+                        <li style="text-indent: 2rem;">
+                            ○ <span class="font-semibold">Great organization</span>: A personal timetable can 
+                            help you keep track of your various commitments and tasks, which can help you stay 
+                            organized and on top of your responsibilities.
+                        </li>
+                        <li style="text-indent: 2rem;">
+                            ○ <span class="font-semibold">Increased productivity</span>: By planning out your 
+                            day or week in advance, you can ensure that you have enough time to complete your 
+                            tasks and avoid feeling overwhelmed or stressed.
+                        </li>
+                        <li style="text-indent: 2rem;">
+                            ○ <span class="font-semibold">Greater focus</span>: A personal timetable can help 
+                            you stay focus on your goals and priorities, as it allows you to allocate your time 
+                            and energy towards activities that are most important to you.
+                        </li>
+                        <li style="text-indent: 2rem;">
+                            ○ <span class="font-semibold">Better work-life balance</span>: A personal timetable 
+                            can help you balance your work, school, and personal commitments, which can lead to 
+                            a more fulfilling and well-rounded life.
+                        </li>
+                    </ol> 
+                    <p>
+                        Overall, personal timetable can be a useful tool for managing time, staying organized, and 
+                        achieving your goals.
+                    </p>                   
+                </div>
+                <div class="create md:w-100-50 mt-8 md:mt-0">
+                    <h1 class="text-3xl font-bold">CREATING PERSONAL TIMETABLE</h1>
+                    <p>
+                        Here are some steps to guide you in creating a personal timetable:
+                    </p>
+                    <ol class="md:px-4 my-4">
+                        <li style="text-indent: 2rem;">
+                            ○ <span class="font-semibold">Determine your goals and schedules</span>: Before you start 
+                            creating your timetable, it's important to have a clear idea of what you want to achieve 
+                            and how much time you have available to devote to your activities. Think about your short-term 
+                            and long-term goals, and consider how you can fit in time for activities that will help you 
+                            achieve them.
+                        </li>
+                        <li style="text-indent: 2rem;">
+                            ○ <span class="font-semibold">Create a list of your weekly activities</span>: Start by making a 
+                            list of all the activities that you do on a regular basis, such as work, school, exercise, hobbies, 
+                            and household tasks. Include the approximate amount of time that each activity takes.
+                        </li>
+                        <li style="text-indent: 2rem;">
+                            ○ <span class="font-semibold">Plan your schedules for the week</span>: Using your list of activities 
+                            and the time that you have available, start planning out your schedule for the week. Consider factors 
+                            such as the importance of each activity, any deadlines or time constraints that you have, and your energy 
+                            levels at different times of day.
+                        </li>
+                        <li style="text-indent: 2rem;">
+                            ○ <span class="font-semibold">Use a timetable template</span>: There are many different timetable templates 
+                            that you can use to help you organize your schedule. These templates can be found online or in printable form, 
+                            and typically include a grid with rows for the days of the week and columns for different time blocks (e.g., 
+                            morning, afternoon, evening).
+                        </li>
+                        <li style="text-indent: 2rem;">
+                            ○ <span class="font-semibold">Fill in your timetable</span>: Once you have chosen a timetable template, start 
+                            filling in your schedule by adding your activities to the appropriate time blocks on the grid. Be sure to leave 
+                            some flexibility in your schedule for unexpected events or activities that may come up.
+                        </li>
+                        <li style="text-indent: 2rem;">
+                            ○ <span class="font-semibold" id="pptGen">Review and adjust your timetable</span>: After you have created your timetable, 
+                            take some time to review it and make any necessary adjustments. Consider whether you have allowed enough time 
+                            for each activity, and whether your schedule is realistic and achievable. Make any necessary changes, and try 
+                            to stick to your timetable as closely as possible.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- End of Blog -->
+
+        <!-- Personal Timetable Generator -->
+        <div class="ppt-gen mt-8 mb-8">
+            <center><h1 class="text-2xl font-bold mb-2">Personal Timetable Generator</h1></center>
+            <div class="inputField bg-gray-300 p-4">
+                <label for="periods" class="text-xl font-semibold"> <span class="text-red-600">*</span>Enter Periods:</label>
+                <p>Eg: 6AM - 8AM</p>
+                <div class="period-input flex flex-col justify-around md:flex-row mt-2">
+                    <input type="text" name="inputPeriod-1" id="inputPeriod-1" placeholder="Period 1" class="border border-black px-2 rounded-lg h-8 mt-2" required>
+                    <input type="text" name="inputPeriod-2" id="inputPeriod-2" placeholder="Period 2" class="border border-black px-2 rounded-lg h-8 mt-2" required>
+                    <input type="text" name="inputPeriod-3" id="inputPeriod-3" placeholder="Period 3" class="border border-black px-2 rounded-lg h-8 mt-2" required>
+                    <input type="text" name="inputPeriod-4" id="inputPeriod-4" placeholder="Period 4" class="border border-black px-2 rounded-lg h-8 mt-2" required>
+                </div>
+                <br>
+                <label for="subjects" class="text-xl font-semibold">Enter Subjects:</label>
+                <p>Eg: Mathematics</p>
+                <div class="period-input flex flex-col justify-around md:flex-row md:mt-2">
+                    <input type="text" name="inputSubject-1" id="inputSubject-1" placeholder="Subject 1" class="border border-black px-2 rounded-lg h-8 mt-2">
+                    <input type="text" name="inputSubject-2" id="inputSubject-2" placeholder="Subject 2" class="border border-black px-2 rounded-lg h-8 mt-2">
+                    <input type="text" name="inputSubject-3" id="inputSubject-3" placeholder="Subject 3" class="border border-black px-2 rounded-lg h-8 mt-2">
+                    <input type="text" name="inputSubject-4" id="inputSubject-4" placeholder="Subject 4" class="border border-black px-2 rounded-lg h-8 mt-2">
+                </div>
+                <div class="period-input flex flex-col justify-around md:flex-row md:mt-2">
+                    <input type="text" name="inputSubject-5" id="inputSubject-5" placeholder="Subject 5" class="border border-black px-2 rounded-lg h-8 mt-2">
+                    <input type="text" name="inputSubject-6" id="inputSubject-6" placeholder="Subject 6" class="border border-black px-2 rounded-lg h-8 mt-2">
+                    <input type="text" name="inputSubject-7" id="inputSubject-7" placeholder="Subject 7" class="border border-black px-2 rounded-lg h-8 mt-2">
+                    <input type="text" name="inputSubject-8" id="inputSubject-8" placeholder="Subject 8" class="border border-black px-2 rounded-lg h-8 mt-2">
+                </div>
+                <button id="sendBtn" class="mt-4 w-full">Generate</button>
+            </div>
+            <div class="hidden ppt-show" id="pptResult">
+                <center><h1 class="text-2xl font-bold mb-2 mt-8">Your Personal Timetable</h1></center>
+                <div class="ppt-gen-container mt-4" id="tab">
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th id="p1"></th>
+                            <th id="p2"></th>
+                            <th id="p3"></th>
+                            <th id="p4"></th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td id="s1"></td>
+                            <td id="s2"></td>
+                            <td id="s3"></td>
+                            <td id="s4"></td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td id="s5"></td>
+                            <td id="s6"></td>
+                            <td id="s7"></td>
+                            <td id="s8"></td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td id="s9"></td>
+                            <td id="s10"></td>
+                            <td id="s11"></td>
+                            <td id="s12"></td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td id="s13"></td>
+                            <td id="s14"></td>
+                            <td id="s15"></td>
+                            <td id="s16"></td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td id="s17"></td>
+                            <td id="s18"></td>
+                            <td id="s19"></td>
+                            <td id="s20"></td>
+                        </tr>
+                    </table>
+                </div>
+                <p class="p-4 mt-8 text-xl hidden" id="tMessage">
+                    Your personal timetabe is ready. I hope you stick to it for effectiveness. :)
+                </p>
+                <p><input type="button" value="Create PDF" id="btPrint" onclick="createPDF()"></p>
+            </div>
+            <span id="contact" class="mb-16"></span>
+        </div>
+        <!-- End of Personal Timetable Generator -->
+
+        <!-- Contact -->
+        <div class="contact mt-16 px-4 mb-4">
+            <center><h1 class="text-2xl font-bold mb-2">Conatct Us</h1></center>
+            <div class="contact-container mt-4">
+                <form>
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name.." required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email.." required>
+                
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+                
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- End of Contact -->
+
+    </main>
+
+    <footer>
+        <center>
+            Copyright &copy; 2023 All Rights Reserved <br>
+            By: BankiDes
+        </center>
+    </footer>
+    
+
+    <script src="./js/index.js"></script>
+    <script src="./js/generator.js"></script>
+    <script src="./js/savePDF.js"></script>
+</body>
+</html>
